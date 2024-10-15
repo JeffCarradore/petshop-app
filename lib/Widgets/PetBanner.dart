@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:petshop/constants/Color.dart';
 
 class PetBanner extends StatelessWidget {
   const PetBanner({super.key});
@@ -28,7 +29,7 @@ class PetBanner extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 15, 52, 61),
+                  color: CustomColor.Text4,
                 ),
               ),
 
@@ -44,14 +45,14 @@ class PetBanner extends StatelessWidget {
                     Navigator.of(context).pushNamed("/pet-info");
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.orangeAccent,
+                    backgroundColor: CustomColor.Text2,
                   ),
                   child: const Text(
                     "Buscar Pet",
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: CustomColor.Text3,
                     ),
                   ),
                 ),
@@ -69,14 +70,14 @@ class PetBanner extends StatelessWidget {
                     Navigator.of(context).pushNamed("/pet-create");
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.orangeAccent,
+                    backgroundColor: CustomColor.Text2,
                   ),
                   child: const Text(
                     "Cadastrar Pet",
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: CustomColor.Text3,
                     ),
                   ),
                 ),
@@ -92,14 +93,14 @@ class PetBanner extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.orangeAccent,
+                    backgroundColor: CustomColor.Text2,
                   ),
                   child: const Text(
                     "Editar Pet",
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: CustomColor.Text3,
                     ),
                   ),
                 ),
@@ -117,14 +118,14 @@ class PetBanner extends StatelessWidget {
                     Navigator.of(context).pushNamed("/pet-delete");
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.black,
+                    backgroundColor: CustomColor.Text2,
                   ),
                   child: const Text(
                     "Deletar Pet",
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: CustomColor.Text3,
                     ),
                   ),
                 ),

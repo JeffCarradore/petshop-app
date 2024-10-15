@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:openapi/api.dart';
+import 'package:petshop/constants/Color.dart';
 import 'package:petshop/request.dart';
 
 class UserUpdatePage extends StatefulWidget {
@@ -55,16 +56,16 @@ class _UserUpdatePageState extends State<UserUpdatePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: CustomColor.Background,
 
       //AppBar
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(kToolbarHeight),
         child: Container(
             decoration:
-                const BoxDecoration(color: Colors.white, boxShadow: [
+                const BoxDecoration(color: CustomColor.Background, boxShadow: [
               BoxShadow(
-                color: Color.fromARGB(20, 0, 0, 0),
+                color: CustomColor.Shadow,
                 blurRadius: 15,
                 spreadRadius: 10,
                 offset: Offset(0, 10),
@@ -73,7 +74,7 @@ class _UserUpdatePageState extends State<UserUpdatePage> {
             child: AppBar(
               title: const Text(
                 "Editar Usuário",
-                style: TextStyle(color: Color.fromARGB(255, 15, 52, 61),),
+                style: TextStyle(color: CustomColor.Text4,),
               ),
               backgroundColor: Colors.white,
               elevation: 0,
@@ -97,7 +98,7 @@ class _UserUpdatePageState extends State<UserUpdatePage> {
                   labelText: "ID",
                   border: OutlineInputBorder(
                     borderSide: BorderSide(
-                      color: Colors.black,
+                      color: CustomColor.Text1,
                     ),
                     borderRadius: BorderRadius.all(Radius.circular(15)),
                   ),
@@ -122,7 +123,7 @@ class _UserUpdatePageState extends State<UserUpdatePage> {
                     labelText: "Nome",
                     border: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Colors.black,
+                        color: CustomColor.Text1,
                       ),
                       borderRadius: BorderRadius.all(Radius.circular(15)),
                     ),
@@ -146,7 +147,7 @@ class _UserUpdatePageState extends State<UserUpdatePage> {
                   labelText: "E-mail",
                   border: OutlineInputBorder(
                     borderSide: BorderSide(
-                      color: Colors.black,
+                      color: CustomColor.Text1,
                     ),
                     borderRadius: BorderRadius.all(Radius.circular(15)),
                   ),
@@ -171,7 +172,7 @@ class _UserUpdatePageState extends State<UserUpdatePage> {
                     labelText: "Telefone",
                     border: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Colors.black,
+                        color: CustomColor.Text1,
                       ),
                       borderRadius: BorderRadius.all(Radius.circular(15)),
                     ),
@@ -195,7 +196,7 @@ class _UserUpdatePageState extends State<UserUpdatePage> {
                   labelText: "Endereço",
                   border: OutlineInputBorder(
                     borderSide: BorderSide(
-                      color: Colors.black,
+                      color: CustomColor.Text1,
                     ),
                     borderRadius: BorderRadius.all(Radius.circular(15)),
                   ),
@@ -220,7 +221,7 @@ class _UserUpdatePageState extends State<UserUpdatePage> {
                     labelText: "Senha",
                     border: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Colors.black,
+                        color: CustomColor.Text1,
                       ),
                       borderRadius: BorderRadius.all(Radius.circular(15)),
                     ),
@@ -238,14 +239,14 @@ class _UserUpdatePageState extends State<UserUpdatePage> {
               child: ElevatedButton(
                 onPressed: updateUser,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.orangeAccent,
+                  backgroundColor: CustomColor.Text2,
                 ),
                 child: const Text(
                   "Atualizar",
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: CustomColor.Text3,
                   ),
                 ),
               ),

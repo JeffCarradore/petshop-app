@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:petshop/constants/Color.dart';
 import 'package:petshop/request.dart';
 
 class UserDeletePage extends StatefulWidget {
@@ -63,16 +64,16 @@ class _UserDeletePageState extends State<UserDeletePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: CustomColor.Background,
 
       //AppBar
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(kToolbarHeight),
         child: Container(
             decoration:
-                const BoxDecoration(color: Colors.white, boxShadow: [
+                const BoxDecoration(color: CustomColor.Background, boxShadow: [
               BoxShadow(
-                color: Color.fromARGB(20, 0, 0, 0),
+                color: CustomColor.Shadow,
                 blurRadius: 15,
                 spreadRadius: 10,
                 offset: Offset(0, 10),
@@ -81,7 +82,7 @@ class _UserDeletePageState extends State<UserDeletePage> {
             child: AppBar(
               title: const Text(
                 "Deletar Usuário",
-                style: TextStyle(color: Color.fromARGB(255, 15, 52, 61)),
+                style: TextStyle(color: CustomColor.Text4),
               ),
               backgroundColor: Colors.white,
               elevation: 0,
@@ -108,11 +109,11 @@ class _UserDeletePageState extends State<UserDeletePage> {
                   decoration: const InputDecoration(
                     suffixIcon: Icon(
                       Icons.search,
-                      color: Colors.black,
+                      color: CustomColor.Text1,
                     ),
                     border: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Colors.black,
+                        color: CustomColor.Text1,
                       ),
                       borderRadius: BorderRadius.all(Radius.circular(15)),
                     ),
@@ -135,14 +136,14 @@ class _UserDeletePageState extends State<UserDeletePage> {
                   }
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.orangeAccent,
+                  backgroundColor: CustomColor.Text2,
                 ),
                 child: const Text(
                   "Deletar",
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: CustomColor.Text3,
                   ),
                 ),
               ),

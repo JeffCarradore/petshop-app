@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:openapi/api.dart';
+import 'package:petshop/constants/Color.dart';
 import 'package:petshop/request.dart';
 
 class UserInfoPage extends StatefulWidget {
@@ -30,7 +31,7 @@ class _UserInfoPageState extends State<UserInfoPage> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      backgroundColor: Colors.white,
+      backgroundColor: CustomColor.Background,
 
         //AppBar
         appBar: PreferredSize(
@@ -38,7 +39,7 @@ class _UserInfoPageState extends State<UserInfoPage> {
           child: Container(
               decoration: const BoxDecoration(color: Colors.white, boxShadow: [
                 BoxShadow(
-                  color: Color.fromARGB(20, 0, 0, 0),
+                  color: CustomColor.Shadow,
                   blurRadius: 15,
                   spreadRadius: 10,
                   offset: Offset(0, 10),
@@ -47,7 +48,7 @@ class _UserInfoPageState extends State<UserInfoPage> {
               child: AppBar(
                 title: const Text(
                   "Buscar Usuário",
-                  style: TextStyle(color: Color.fromARGB(255, 15, 52, 61),),
+                  style: TextStyle(color: CustomColor.Text4,),
                 ),
                 backgroundColor: Colors.white,
                 elevation: 0,

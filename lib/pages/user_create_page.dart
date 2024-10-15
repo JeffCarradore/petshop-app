@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:openapi/api.dart';
+import 'package:petshop/constants/Color.dart';
 import 'package:petshop/request.dart';
 
 class UserCreatePage extends StatefulWidget {
@@ -54,15 +55,15 @@ class _UserCreatePageState extends State<UserCreatePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: CustomColor.Background,
 
       //AppBar
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(kToolbarHeight),
         child: Container(
-            decoration: const BoxDecoration(color: Colors.white, boxShadow: [
+            decoration: const BoxDecoration(color: CustomColor.Background, boxShadow: [
               BoxShadow(
-                color: Color.fromARGB(20, 0, 0, 0),
+                color: CustomColor.Shadow,
                 blurRadius: 15,
                 spreadRadius: 10,
                 offset: Offset(0, 10),
@@ -71,9 +72,9 @@ class _UserCreatePageState extends State<UserCreatePage> {
             child: AppBar(
               title: const Text(
                 "Cadastrar Usuário",
-                style: TextStyle(color: Color.fromARGB(255, 15, 52, 61)),
+                style: TextStyle(color: CustomColor.Text4),
               ),
-              backgroundColor: Colors.white,
+              backgroundColor: CustomColor.Background,
               elevation: 0,
             )),
       ),
@@ -99,7 +100,7 @@ class _UserCreatePageState extends State<UserCreatePage> {
                     labelText: "Nome",
                     border: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Colors.black,
+                        color: CustomColor.Text1,
                       ),
                       borderRadius: BorderRadius.all(Radius.circular(15)),
                     ),
@@ -123,7 +124,7 @@ class _UserCreatePageState extends State<UserCreatePage> {
                   labelText: "E-mail",
                   border: OutlineInputBorder(
                     borderSide: BorderSide(
-                      color: Colors.black,
+                      color: CustomColor.Text1,
                     ),
                     borderRadius: BorderRadius.all(Radius.circular(15)),
                   ),
@@ -148,7 +149,7 @@ class _UserCreatePageState extends State<UserCreatePage> {
                     labelText: "Telefone",
                     border: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Colors.black,
+                        color: CustomColor.Text1,
                       ),
                       borderRadius: BorderRadius.all(Radius.circular(15)),
                     ),
@@ -172,7 +173,7 @@ class _UserCreatePageState extends State<UserCreatePage> {
                   labelText: "Endereço",
                   border: OutlineInputBorder(
                     borderSide: BorderSide(
-                      color: Colors.black,
+                      color: CustomColor.Text1,
                     ),
                     borderRadius: BorderRadius.all(Radius.circular(15)),
                   ),
@@ -197,7 +198,7 @@ class _UserCreatePageState extends State<UserCreatePage> {
                     labelText: "Senha",
                     border: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Colors.black,
+                        color: CustomColor.Text1,
                       ),
                       borderRadius: BorderRadius.all(Radius.circular(15)),
                     ),
@@ -215,14 +216,14 @@ class _UserCreatePageState extends State<UserCreatePage> {
               child: ElevatedButton(
                 onPressed: createUser,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.orangeAccent,
+                  backgroundColor: CustomColor.Text2,
                 ),
                 child: const Text(
                   "Cadastrar",
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: CustomColor.Text3,
                   ),
                 ),
               ),

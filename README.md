@@ -1,16 +1,11 @@
 # petshop
 
-A new Flutter project.
+Este é um aplicativo de petshop desenvolvido em Flutter. O aplicativo é multiplataforma, funcionando tanto em dispositivos móveis quanto na web e desktops.
 
-## Getting Started
+## Requisitos
 
-This project is a starting point for a Flutter application.
+Certifique-se de ter o ambiente Flutter configurado. Você pode encontrar as instruções de instalação do Flutter [aqui](https://flutter.dev).
 
-A few resources to get you started if this is your first Flutter project:
+## Licença
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Este projeto está sob a licença MIT.

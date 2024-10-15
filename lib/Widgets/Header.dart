@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:petshop/constants/Color.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
@@ -11,11 +12,11 @@ class Header extends StatelessWidget {
       //margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
 
       decoration: const BoxDecoration(
-        color: Colors.white,
+        color: CustomColor.Background,
         //Header Shadow
         boxShadow: [
           BoxShadow(
-            color: Color.fromARGB(20, 0, 0, 0),
+            color: CustomColor.Shadow,
             blurRadius: 15,
             spreadRadius: 10,
             offset: Offset(0, 10),
@@ -48,7 +49,7 @@ class Header extends StatelessWidget {
                   width: 120,
                   height: 40,
                   decoration: ShapeDecoration(
-                      color: Colors.orangeAccent,
+                      color: CustomColor.Text2,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       )),
@@ -59,7 +60,7 @@ class Header extends StatelessWidget {
                     child: const Text(
                       "NEW USER",
                       style: TextStyle(
-                        color: Colors.white,
+                        color: CustomColor.Text3,
                         fontWeight: FontWeight.w400,
                         fontSize: 16,
                       ),
@@ -74,7 +75,7 @@ class Header extends StatelessWidget {
                   width: 120,
                   height: 40,
                   decoration: ShapeDecoration(
-                      color: Colors.orangeAccent,
+                      color: CustomColor.Text2,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       )),
@@ -85,7 +86,7 @@ class Header extends StatelessWidget {
                     child: const Text(
                       "NEW PET",
                       style: TextStyle(
-                        color: Colors.white,
+                        color: CustomColor.Text3,
                         fontWeight: FontWeight.w400,
                         fontSize: 16,
                       ),

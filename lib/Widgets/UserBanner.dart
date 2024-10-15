@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:petshop/constants/Color.dart';
 
 class Userbanner extends StatelessWidget {
   const Userbanner({super.key});
@@ -36,7 +37,7 @@ class Userbanner extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 15, 52, 61),
+                  color: CustomColor.Text4,
                 ),
               ),
 
@@ -52,14 +53,14 @@ class Userbanner extends StatelessWidget {
                     Navigator.of(context).pushNamed("/user-info");
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.black,
+                    backgroundColor: CustomColor.Text2,
                   ),
                   child: const Text(
                     "Buscar Usuário",
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: CustomColor.Text3,
                     ),
                   ),
                 ),
@@ -77,14 +78,14 @@ class Userbanner extends StatelessWidget {
                     Navigator.of(context).pushNamed("/user-create");
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.orangeAccent,
+                    backgroundColor: CustomColor.Text2,
                   ),
                   child: const Text(
                     "Cadastrar Usuário",
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: CustomColor.Text3,
                     ),
                   ),
                 ),
@@ -102,14 +103,14 @@ class Userbanner extends StatelessWidget {
                     Navigator.of(context).pushNamed("/user-update");
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.black,
+                    backgroundColor: CustomColor.Text2,
                   ),
                   child: const Text(
                     "Editar Usuário",
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: CustomColor.Text3,
                     ),
                   ),
                 ),
@@ -127,14 +128,14 @@ class Userbanner extends StatelessWidget {
                     Navigator.of(context).pushNamed("/user-delete");
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.orangeAccent,
+                    backgroundColor: CustomColor.Text2,
                   ),
                   child: const Text(
                     "Deletar Usuário",
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: CustomColor.Text3,
                     ),
                   ),
                 ),

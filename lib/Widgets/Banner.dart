@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:petshop/constants/Color.dart';
 
 class BannerA3 extends StatelessWidget {
   const BannerA3({super.key});
@@ -10,7 +11,7 @@ class BannerA3 extends StatelessWidget {
 
     return Container(
       width: screenWidth,
-      color: Color.fromARGB(255, 246, 246, 246),
+      color: CustomColor.Banner,
       constraints: const BoxConstraints(
         minHeight: 150,
         maxHeight: 250,
@@ -36,7 +37,7 @@ class BannerA3 extends StatelessWidget {
                     fontSize: 42,
                     height: 1.2,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 15, 52, 61),
+                    color: CustomColor.Text4,
                   ),
                 ),
               ),
@@ -47,7 +48,7 @@ class BannerA3 extends StatelessWidget {
                     fontSize: 52,
                     height: 1.2,
                     fontWeight: FontWeight.bold,
-                    color: Colors.orangeAccent,
+                    color: CustomColor.Text2,
                   ),
                 ),
               ),

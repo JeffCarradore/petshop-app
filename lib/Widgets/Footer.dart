@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:petshop/constants/Color.dart';
 
 class Footer extends StatelessWidget {
   const Footer({super.key});
@@ -9,7 +10,7 @@ class Footer extends StatelessWidget {
       margin: const EdgeInsets.only(top: 60),
       padding:
           const EdgeInsets.only(top: 15, bottom: 15, left: 100, right: 150),
-      color: Color.fromARGB(255, 31, 31, 31),
+      color: CustomColor.Footer,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
@@ -29,12 +30,12 @@ class Footer extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     'Contato: contato@petcare.com',
-                    style: TextStyle(fontSize: 16, color: Colors.white,),
+                    style: TextStyle(fontSize: 16, color: CustomColor.Text3,),
                   ),
                   SizedBox(height: 05),
                   Text(
                     'Localização: Rua Antônio Dib Mussi, Florianópolis, SC',
-                    style: TextStyle(fontSize: 16, color: Colors.white,),
+                    style: TextStyle(fontSize: 16, color: CustomColor.Text3,),
                   ),
                 ],
               ),
@@ -43,7 +44,7 @@ class Footer extends StatelessWidget {
           const SizedBox(height: 10),
           const Text(
             '© 2024 Petcare. Todos os direitos reservados.',
-            style: TextStyle(fontSize: 14, color: Colors.white,),
+            style: TextStyle(fontSize: 14, color: CustomColor.Text3,),
           ),
         ],
       ),

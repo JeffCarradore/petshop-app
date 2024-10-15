@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:petshop/constants/Color.dart';
 import 'package:petshop/request.dart';
 
 class PetDeletePage extends StatefulWidget {
@@ -64,7 +65,7 @@ class _PetDeletePageState extends State<PetDeletePage> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      backgroundColor: Colors.white,
+      backgroundColor: CustomColor.Background,
 
       //AppBar
       appBar: PreferredSize(
@@ -134,14 +135,14 @@ class _PetDeletePageState extends State<PetDeletePage> {
                 }
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.orangeAccent,
+                  backgroundColor: CustomColor.Text2,
                 ),
                 child: const Text(
                   "Deletar",
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: CustomColor.Text3,
                   ),
                 ),
               ),
